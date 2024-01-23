@@ -45,19 +45,26 @@ janet = Customer('Janet Johnson', 'janet@yahoo.com', 25)
 
 janet.set_balance(500)
 print(janet.greeting())
+# My name is Janet Johnson and I am 25 and my balance is 500
 
 brad.has_birthday()
 print(brad.greeting())
+# My name is Brad Traversy and I am 38
 
 #Encapsulation -->
 brad.print_encap()
+# 1000
 brad._private = 800 #Changing for brad
 brad.print_encap()
+# 800
 
 # Method inherited from parent
 janet.print_encap() #Changing the variable for brad doesn't affect janets variable --> Encapsulation
+# 1000
 janet._private = 600
 janet.print_encap()
+# 600
 
 #Similary changing janet's doesn't affect brad's variable.
 brad.print_encap()
+# 800

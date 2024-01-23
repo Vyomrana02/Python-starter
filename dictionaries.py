@@ -11,17 +11,21 @@ person = {
 # person2 = dict(first_name='Sara', last_name='Williams')
 
 # Get value
-print(person['first_name'])
+print(person['first_name']) 
+# John
 print(person.get('last_name'))
+# Doe
 
 # Add key/value
 person['phone'] = '555-555-5555'
 
 # Get dict keys
 print(person.keys())
+# dict_keys(['first_name', 'last_name', 'age', 'phone'])
 
-# Get dict items
+# Get dict items its list of tupples of individual
 print(person.items())
+# dict_items([('first_name', 'John'), ('last_name', 'Doe'), ('age', 30), ('phone', '555-555-5555')])
 
 # Copy dict
 person2 = person.copy()
@@ -36,6 +40,7 @@ person.clear()
 
 # Get length
 print(len(person2))
+# 5
 
 # List of dict
 people = [
@@ -44,3 +49,4 @@ people = [
 ]
 
 print(people[1]['name'])
+# Kevin

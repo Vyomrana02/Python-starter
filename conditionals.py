@@ -61,6 +61,8 @@ if x not in numbers:
 # is
 if x is y:
   print(x is y)
+#is is same as =
+
 
 # is not
 if x is not y:

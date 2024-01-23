@@ -6,24 +6,40 @@ people = ['John', 'Paul', 'Sara', 'Susan']
 for person in people:
   print(f'Current Person: {person}')
 
+# Current Person: John
+# Current Person: Paul
+# Current Person: Sara
+# Current Person: Susan
+
 # Break
 for person in people:
   if person == 'Sara':
     break
   print(f'Current Person: {person}')
 
+# Current Person: John
+# Current Person: Paul
+
 # Continue
 for person in people:
   if person == 'Sara':
     continue
   print(f'Current Person: {person}')
+# Current Person: John
+# Current Person: Paul
+# Current Person: Susan
 
 # range
 for i in range(len(people)):
   print(people[i])
-
+# John
+# Paul
+# Sara
+# Susan
 for i in range(0, 11):
   print(f'Number: {i}')
+#  0 - 10
+
 
 # While loops execute a set of statements as long as a condition is true.
 
